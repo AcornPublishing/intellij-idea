@@ -1,0 +1,18 @@
+repositories {
+  jcenter()
+}
+
+apply plugin: 'java'
+apply plugin: 'war'
+
+archivesBaseName = "sample-web"
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+dependencies {
+  testCompile 'junit:junit:4.12'
+  providedCompile 'org.jboss.spec:jboss-javaee-7.0:1.0.3.Final'
+  runtime 'org.eclipse.persistence:eclipselink:2.6.4'
+}
+

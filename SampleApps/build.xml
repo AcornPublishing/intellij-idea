@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<project name="glassfish">
+    <target name="reload">
+        <touch file="build/libs/exploded/SampleApps.war/.reload"/>
+    </target>
+</project>
